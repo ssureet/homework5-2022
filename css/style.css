@@ -1,0 +1,161 @@
+/* part 1 */
+@keyframes animatelogo {
+    0%   {width: 25px; opacity: 0;}
+    100% {width: 475px; opacity: 1;}
+}
+
+#logo {
+	animation-name: animatelogo;
+    animation-duration: 5s;        			
+	} 
+
+/* part 2 */
+body{
+    font-family: "Poppins", serif;
+    background-image: url(../images/concrete_seamless.png);
+    background-color: #f1f1f1;
+}
+
+/* part 3 */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* part 4 */
+.nav_links{
+    display: flex;
+    flex-direction: column;
+}
+
+/* part 5 */
+a:visited, a:hover, a:link, a:focus{
+    color: blue;
+}
+/* part 6 */
+.card > header{
+    background-color: #288088;
+    border: 2px solid #45adad;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* part 7 */
+.card{
+    flex-basis: 450px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* part 8 */
+.pricing{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* part 9 */
+.gallery img{
+    border: solid 10px #50c7c7;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+}
+
+/* part 10 */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+
+/* part 11 */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+}
+
+/* part 12 */
+.card, .pricing{
+    flex-basis: 275px;
+}
+
+/* part 13 */
+body > header{
+    position: sticky;
+    top: 0px;
+}
+
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    
+
+/* part 14 */
+#logo{
+    animation: none;
+}
+
+}
+
+@media print{
+/* part 15 */
+body{
+    font-family: Arial, Arial, Helvetica;
+}
+
+/* part 16 */
+body{
+    background-image: none;
+}
+
+/* part 17 */
+header{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* part 18 */
+.pricing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+/* part 19 */
+.card{
+    border: solid 2px #45addd;
+    flex-basis: 325px;
+    flex-direction: row;
+}
+
+/* part 20 */
+.gallery, #gallery {
+    display:none
+}
+
+/* part 21 */
+.card > ul > li:nth-child(2)::after{
+    content: "\1F44D";
+}
+}
